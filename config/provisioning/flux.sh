@@ -19,7 +19,7 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
 )
 
 CHECKPOINT_MODELS=(
@@ -37,12 +37,12 @@ VAE_MODELS=(
 )
 
 LORA_MODELS=(
+    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo.safetensors",
+    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo_000002200.safetensors",
+    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo_000002600.safetensors",
 )
 
 ESRGAN_MODELS=(
-    "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
-    "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
-    "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
