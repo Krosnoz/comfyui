@@ -37,9 +37,8 @@ VAE_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo.safetensors"
-    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo_000002200.safetensors"
-    "https://huggingface.co/Krosnoz/karly/resolve/main/karly%20logo_000002600.safetensors"
+    "https://huggingface.co/Krosnoz/karly/resolve/main/karlylogo_000001750.safetensors"
+    "https://huggingface.co/Krosnoz/karly/resolve/main/karlylogo_000002000.safetensors"
 )
 
 ESRGAN_MODELS=(
