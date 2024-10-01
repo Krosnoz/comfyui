@@ -20,6 +20,17 @@ PIP_PACKAGES=(
 
 NODES=(
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+    "https://github.com/nkchocoai/ComfyUI-SaveImageWithMetaData"
+    "https://github.com/ronniebasak/ComfyUI-Tara-LLM-Integration"
+    "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/Gourieff/comfyui-reactor-node"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
 )
 
 CHECKPOINT_MODELS=(
@@ -44,6 +55,16 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
+)
+
+ULTRALYTICS_MODELS=(
+    "https://huggingface.co/datasets/Gourieff/ReActor/blob/main/models/sams/sam_vit_b_01ec64.pth"
+    "https://huggingface.co/Bingsu/adetailer/blob/main/face_yolov8n_v2.pt"
+    "https://civitai.com/models/178518/eyeful-or-robust-eye-detection-for-adetailer-comfyui"
+)
+
+UPSCALE_MODELS=(
+    "https://civitai.com/models/147641/nmkd-siax-cx"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
@@ -91,6 +112,12 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/ultralytics/bbox" \
+        "${ULTRALYTICS_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/upscale_models" \
+        "${UPSCALE_MODELS[@]}"
     provisioning_print_end
 }
 
